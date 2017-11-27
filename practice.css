@@ -1,0 +1,208 @@
+#jsNavbar{
+	display: block;
+	width: 50%;
+	margin: 100px auto;
+	overflow: hidden;
+	font-family: 'Barlow Condensed';
+}
+
+#jsNavbar a{
+	overflow: hidden;
+	font-size:20px;
+	background-color: #5597B4;
+	color: white;
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#jsNavbar a:hover {
+	background-color: #555555;
+}
+
+#jsNavbar.HOME #home,
+#jsNavbar.PROJECTS #projects,
+#jsNavbar.SERVICES #services,
+#jsNavbar.CONTACT #contact{
+	background-color: #e35885;
+}
+
+
+#jsNavbar p{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 20px;
+	color: #5597B4;
+}
+
+#jsNavbar p span{
+	font-size:20px;
+	background-color: #C4D7E0;
+	color: white;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+
+#inlineEditor{
+	display: block;
+	width: 50%;
+	margin: 100px auto;
+}
+
+#inlineEditor input{
+	width: 100%;
+	background-color: #ffffff;
+	color: #8D9395;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	border: 8px solid #5597B4;
+	border-radius: 6px;
+}
+
+#inlineEditor input::after{
+	content: "aaaaaa";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #5597B4 transparent transparent transparent;
+}
+
+#inlineEditor p{
+	text-align: center;
+	color: #8D9395;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+#inlineEditor p i{
+	margin-right: 8px;
+}
+
+
+#priceForm{
+	box-sizing: border-box;
+	display: block;
+	width: 50%;
+	margin: 20px auto;
+	background-color: #61A1BC;
+	padding: 50px;
+}
+
+#priceForm h3{
+	margin: 0 0 20px 0;
+	font-family: 'Cookie';
+	font-size: 50px;
+	color: #ffffff;
+	text-align: center;
+}
+
+#priceForm ul{
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Barlow Condensed';
+}
+
+#priceForm li{
+	box-sizing: border-box;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-size: 24px;
+	line-height: 50px;
+	background-color: #E35885;
+	color: #ffffff;
+	margin: 0 0 15px 0;
+	padding: 0 20px;
+}
+
+#priceForm li.active{
+	background-color: #8ec16d;
+}
+
+#priceForm p{
+	box-sizing: border-box;
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+	border-bottom: 1px solid #ffffff;
+	font-family: 'Barlow Condensed';
+	color: #ffffff;
+	font-size: 24px;
+}
+
+
+#priceForm span{
+	float: right;
+}
+
+
+
+
+
+#searchBar{
+	display: block;
+	width: 50%;
+	margin: 50px auto;
+	box-sizing: border-box;
+	border: 1px solid #dddddd;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+#searchBar input{
+	box-sizing: border-box;
+	display: block;
+	width: 60%;
+	font-size: 1em;
+	margin: 50px auto;
+	padding: 8px;
+	border:5px solid #61A1BC;
+}
+
+#searchBar ul{
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#searchBar ul li{
+	display: block;
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #dddddd;
+	font-family: 'Barlow Condensed';
+	font-size: 24px;
+}
+
+#searchBar ul li img{
+	display: inline-block;
+	width: 10%;
+	height: 10%;
+}
+
+#searchBar ul li a{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 90%;
+	text-decoration: none;
+	padding-left: 20px;
+
+}
+
+#searchBar ul li a:hover{
+	color: #E35885;
+}

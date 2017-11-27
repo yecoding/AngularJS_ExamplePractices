@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular JS Practices</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="practice.css">
+</head>
+<body>
+
+	<!-- Navbar Select -->
+	<div id="jsNavbar" class="{{active}}" ng-app="navbar" ng-controller="navControl" ng-click="$event.preventDefault()">
+		<div class="container">
+			<a href="#" id="home" ng-click='active = "HOME"'>HOME</a>
+			<a href="#" id="projects" ng-click='active = "PROJECTS"'>PROJECTS</a>
+			<a href="#" id="services" ng-click='active = "SERVICES"'>SERVICES</a>
+			<a href="#" id="contact" ng-click='active = "CONTACT"'>CONTACT</a>
+		</div>
+		<p ng-hide="active">Please click a menu item</p>
+		<p ng-show="active">You chose<span>{{active}}</span></p>	
+	</div>
+
+
+
+	<!-- Inline Editor -->
+	<div id="inlineEditor" ng-app="inlEdt" ng-controller="inlEdtCtrl">
+	<div class="tooltip"><input ng-show="inputShow" ng-model="text"></div>	
+	<p ng-click='toggleInput($event)'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>{{text}}</p>
+	</div>
+
+
+	<!-- Price Form -->
+	<div id="priceForm" ng-app='prcFrm' ng-controller='prcFrmCtrl'>
+		<h3>Services</h3>
+		<ul>
+			<li ng-repeat = 'x in services' ng-click = 'calPrice(x)' ng-class = '{active: x.active}'>{{x.item}}<span>{{x.price | currency}}</span></li>
+		</ul>
+		<p>Total: <span>{{totalPrice | currency}}</span></p>
+	</div>
+
+	<!-- Search Bar -->
+
+	<div id="searchBar" ng-app='srchBr' ng-controller='srchBrCtrl'>
+		<input type="text" ng-model='keyword' placeholder="Enter your search terms">
+		<ul>
+			<li ng-repeat='x in news | filter : keyword'><img src="{{x.image}}"><a href="#">{{x.title}}</a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="practice.js"></script>
+</body>
+</html>
