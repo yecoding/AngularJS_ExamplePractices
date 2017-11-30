@@ -206,3 +206,113 @@
 #searchBar ul li a:hover{
 	color: #E35885;
 }
+
+
+
+
+
+#GLSwitch{
+	display: block;
+	width: 50%;
+	margin: 100px auto;
+	border: 1px solid #dddddd;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#GLSwitch #ctrlBar{
+	display: block;
+	width: 100%;
+	height: 80px;
+	background-color: #5998B3;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#ctrlBar a{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: #4987A1;
+	border-radius: 10px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#ctrlBar a:hover{
+	background-color: #555555;
+}
+
+#ctrlBar a.active{
+	background-color:#c14694;
+}
+
+#GLSwitch a img{
+	width: 100%;
+
+}
+
+
+
+#GLSwitch ul{
+	display: block;
+	width: 60%;
+	margin: 20px auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*List Layout*/
+
+#GLSwitch .lists li{
+	display: block;
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #dddddd;
+	font-family: 'Barlow Condensed';
+	font-size: 24px;
+}
+
+#GLSwitch .lists li img{
+	display: inline-block;
+	width: 10%;
+	height: 10%;
+}
+
+#GLSwitch .lists li a{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 90%;
+	text-decoration: none;
+	padding-left: 20px;
+
+}
+
+#GLSwitch .lists li a:hover{
+	color: #E35885;
+}
+
+/*Grid Layout*/
+
+
+#GLSwitch .grids li{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 33.33%;
+	padding: 10px;
+	float: left;
+}
+
+#GLSwitch .grids li a{
+	margin: 0;
+	padding: 0;
+}
+
+#GLSwitch .grids li img{
+	display: block;
+	width: 100%;
+}
+
