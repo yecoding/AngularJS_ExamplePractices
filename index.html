@@ -50,6 +50,25 @@
 		</ul>
 	</div>
 
+	<!-- Grid/List Switch -->
+
+	<div id="GLSwitch" ng-app='switchableGrid' ng-controller='SGCtrl'>
+		<div id="ctrlBar">
+			<a ng-click = 'layout = "grid"' ng-class="{active: layout =='grid'}">
+				<img src="images/icon_grid.svg" alt="Grid Layout">
+			</a>
+			<a ng-click = 'layout = "list"' ng-class="{active: layout =='list'}">
+				<img src="images/icon_list.svg" alt="List Layout">
+			</a>
+		</div>
+		<ul ng-show='layout == "list"' class="lists">
+			<li ng-repeat='x in items'><img src="{{x.image}}"><a href="#">{{x.title}}</a></li>
+		</ul>
+		<ul ng-show='layout == "grid"' class="grids">
+			<li ng-repeat='x in items'><a href="#"><img src="{{x.image}}"></a></li>
+		</ul>
+	</div>
+
 	<script type="text/javascript" src="practice.js"></script>
 </body>
 </html>
